@@ -1,50 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="task1.css">
+    <title>uptoskills</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+     <div style="background-color:#103f40">
+    <header class="navbar">
+      <div class="logo">UPTOSKILLS</div>
+      <div class="nav-links">
+          <a href="#">Courses</a>
+          <a href="#">Jobs</a>
+          <a href="#">Degree Program</a>
+          <a href="#">Learn & Earn</a>
+          <a href="#">Discover</a>
+      
+ 
+          <a href="mailto:info@uptoskills.com">info@uptoskills.com</a>
+          <a href="tel:+91931977224">+91-9319772244</a>
+          <button class="sign-in-btn" style="float: right;">Sign In</button>
+      </div>
+  </header>
+  
+  <!-- Main Content -->
+       <div style="text-align: center;">
+      <h1>Add Online Event Program</h1>
+      <div class="breadcrumb" style="color: white;">
+          <a style="color: white;" href="#">Home</a> > <span>Add Onlineeventprogram</span>
+      </div>
+      </div>
+      </div>
+      
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+      <div class="container">
+        <h1>Add Online Event Program</h1>
+        <form>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter title">
 
-    <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>This is the home section of your website.</p>
-        </section>
+            <label for="image">Featured Image:</label>
+            <input type="file" id="image" name="image">
 
-        <section id="about">
-            <h2>About Section</h2>
-            <p>This is the about section of your website.</p>
-        </section>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">Select a category</option>
+                <option value="tech">Tech</option>
+                <option value="art">Art</option>
+                <!-- Add more options here -->
+            </select>
 
-        <section id="services">
-            <h2>Services Section</h2>
-            <p>Details about services offered can go here.</p>
-        </section>
+            <label for="stages">Stages:</label>
+            <input type="text" id="stage1" name="stage1" placeholder="Stage input 1">
+            <input type="text" id="stage2" name="stage2" placeholder="Stage input 2">
 
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Contact details go here.</p>
-        </section>
-    </main>
+            <label for="timeline">Timeline:</label>
+            <input type="text" id="timeline1" name="timeline1" placeholder="Timeline input 1">
+            <input type="text" id="timeline2" name="timeline2" placeholder="Timeline input 2">
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" rows="4" placeholder="Enter details"></textarea>
 
+            <label for="dates">Dates & Deadlines:</label>
+            <input type="text" id="date1" name="date1" placeholder="Date & Deadline 1">
+            <input type="text" id="date2" name="date2" placeholder="Date & Deadline 2">
+            <input type="text" id="date3" name="date3" placeholder="Date & Deadline 3">
+            <input type="text" id="date4" name="date4" placeholder="Date & Deadline 4">
+            <input type="text" id="date5" name="date5" placeholder="Date & Deadline 5">
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact1" name="contact1" placeholder="Contact information 1">
+            <input type="text" id="contact2" name="contact2" placeholder="Contact information 2">
+
+            <button type="submit">Add Event Program</button>
+        </form>
+    </div>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+      <div class="footer-container">
+          <div class="footer-section">
+              <h2>UPTOSKILLS</h2>
+              <p><strong>Address:</strong> Palam, New Delhi, Delhi 110077</p>
+              <p><strong>Email:</strong> info@uptoskills.com</p>
+              <p><strong>Phone:</strong> +91-9319772294</p>
+              <div class="social-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="footer-section">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Jobs & Internships</a></li>
+                  <li><a href="#">Become a Trainer</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Short Links</h3>
+              <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Refund & Cancellation Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Find Us Here</h3>
+            <p>Location Map</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
