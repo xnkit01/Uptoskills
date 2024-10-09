@@ -1,76 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="task1.css">
-    <title>uptoskills</title>
-  </head>
-  <body>
-    <!-- Main Content -->
-       <div style="text-align: center;">
-      <h1>ADD ONLINE EVENT PROGRAM</h1>
-      <div class="breadcrumb" style="color: white;">
-          <a style="color: white;" href="#">Home</a> > <span>Add Online eventprogram</span>
-      </div>
-      <div class="container">
-        <form>
-            <label for="title">TITLE:</label>
-            <input type="text" id="title" name="title" placeholder="Add Title Here*">
+    <title>UPTOSKILLS</title>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
 
-            <label for="image">FEATURED IMAGE:</label>
-            <input type="file" id="Choose File" name="Choose file" required>
-            <label for="category">CATEGORY:</label>
-            <select id="category" name="category">
-                <option value="">Select a category</option>
-                <option value="A">Live Event</option>
-                <option value="B">My EVent Program</option>
-                <option value="C">Past Event</option>
-                <option value="D">Podcast Show</option>
-                <option value="E">Upcoming Event</option>
-                <!-- Add more options here -->
-            </select>
-          <label for="stages">STAGES:</label>
-          <input type ="text" id= "stages" placeholder=".....*...*...*...">
-          
-            <lable for="stage input">STAGES INPUT:</lable>
-          <input type="text" id="stages input" placeholder="Stages Input">
-          
-            
-            <label for="stages input 1">STAGES INPUT 1:</label>
-           <textarea name="messages" id="messages"></textarea>
-            <label for="stages input 2">STAGES INPUT 2:</label>
-           <textarea name="messages" id="messages"></textarea>
-          
-         
-            
-            <label for="timeline">TIMELINE:</label>
-            <input type="text" id="timeline" name="timeline1" placeholder="Timeline input " required>
-            
-            <label for="timeline input">TIMELINE INPUT:</lable>
-            <input type="text" id="timeline input" name="timeline timeline input" placeholder="Timeline input " required>
-          
-              <label for="timeline input 1">TIMELINE INPUT 1:</label>
-              <input type="timeline input 1" name="timeline input-1" placeholder="timeline input 1">  
-            <label for="timeline input 1">TIMELINE INPUT 2:</label>
-           <input type="timeline input 2" name="timeline input-2" placeholder="timeline input 2">  
-            
-              <label for="details">DETAILS:</label>
-            <textarea id="details" name="details" rows="4" placeholder="Enter details"></textarea>
+</head>
+<body>
 
-            <label for="dates">DATES & DEADLINES:</label>
-            <input type="text" id="date1" name="date1" placeholder="Date & Deadline 1">
-            <input type="text" id="date2" name="date2" placeholder="Date & Deadline 2">
-            <input type="text" id="date3" name="date3" placeholder="Date & Deadline 3">
-            <input type="text" id="date4" name="date4" placeholder="Date & Deadline 4">
-            <input type="text" id="date5" name="date5" placeholder="Date & Deadline 5">
-
-            <label for="contact">CONTACT INFORMATION:</label>
-            <input type="text" id="contact1" name="contact1" placeholder="Contact information 1">
-            <input type="text" id="contact2" name="contact2" placeholder="Contact information 2">
-            <input type="text" id="contact2" name="contact3" placeholder="Contact information 3">
-
-            <button type="submit">Add Event Program</button>
-        </form>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">UPTOSKILLS</div>
+    <div class="nav-links">
+        <a href="#">Courses</a>
+        <a href="#">Jobs</a>
+        <a href="#">Degree Program</a>
+        <a href="#">Learn & Earn</a>
+        <a href="#">Discover</a>
+        <a href="mailto:info@uptoskills.com">info@uptoskills.com</a>
+        <a href="tel:+91931977224">+91-9319772244</a>
+        <button type="button" class="sign-in-btn">Sign In</button>
     </div>
-    </body>          
+</nav>
+
+<!-- Main Content -->
+<main class="container">
+    <h1 class="text-center mb-4">Add Online Event Program</h1>
+    <form action="your-action-url" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">Featured Image:</label>
+            <input type="file" class="form-control" id="image" name="image" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="category" class="form-label">Category:</label>
+            <select class="form-select" id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="tech">Tech</option>
+                <option value="art">Art</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="stages" class="form-label">Stages:</label>
+            <input type="text" class="form-control mb-2" id="stage1" name="stage1" placeholder="Stage input 1" required>
+            <input type="text" class="form-control" id="stage2" name="stage2" placeholder="Stage input 2" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="timeline" class="form-label">Timeline:</label>
+            <input type="text" class="form-control mb-2" id="timeline1" name="timeline1" placeholder="Timeline input 1" required>
+            <input type="text" class="form-control" id="timeline2" name="timeline2" placeholder="Timeline input 2" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="details" class="form-label">Details:</label>
+            <textarea class="form-control" id="details" name="details" rows="4" placeholder="Enter details" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="dates" class="form-label">Dates & Deadlines:</label>
+            <input type="text" class="form-control mb-2" id="date1" name="date1" placeholder="Date & Deadline 1" required>
+            <input type="text" class="form-control mb-2" id="date2" name="date2" placeholder="Date & Deadline 2" required>
+            <input type="text" class="form-control mb-2" id="date3" name="date3" placeholder="Date & Deadline 3" required>
+            <input type="text" class="form-control mb-2" id="date4" name="date4" placeholder="Date & Deadline 4" required>
+            <input type="text" class="form-control" id="date5" name="date5" placeholder="Date & Deadline 5" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="contact" class="form-label">Contact Information:</label>
+            <input type="text" class="form-control mb-2" id="contact1" name="contact1" placeholder="Contact information 1" required>
+            <input type="text" class="form-control" id="contact2" name="contact2" placeholder="Contact information 2" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Event Program</button>
+    </form>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>UPTOSKILLS</h2>
+            <p><strong>Address:</strong> Palam, New Delhi, Delhi 110077</p>
+            <p><strong>Email:</strong> info@uptoskills.com</p>
+            <p><strong>Phone:</strong> +91-9319772294</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Jobs & Internships</a></li>
+                <li><a href="#">Become a Trainer</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Short Links</h3>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Refund & Cancellation Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Find Us Here</h3>
+            <p>Location Map</p>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
