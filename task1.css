@@ -11,39 +11,11 @@ body {
     color: #3a384a;
 }
 
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #103f40; /* Navbar background color */
-    color: white;
-}
+
 
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-.nav-links a,
-.navbar .contact-info a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.nav-links button {
-    background-color: #ff4500;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.nav-links button:hover {
-    background-color: #e03e00; /* Hover effect */
 }
 
 /* Main Content Styles */
@@ -120,100 +92,3 @@ button[type="submit"]:hover {
     background-color: #218838; /* Darker green on hover */
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    flex: 1;
-    padding: 20px;
-    min-width: 200px;
-}
-
-.footer-section h2,
-.footer-section h3 {
-    color: #e53935;
-    margin-bottom: 15px;
-}
-
-.footer-section p,
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-section ul li a {
-    color: #aaa;
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    color: white;
-}
-
-/* Social Icons Styles */
-.social-icons a {
-    color: white;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.social-icons a i {
-    font-size: 20px;
-    color: #aaa;
-}
-
-.social-icons a:hover i {
-    color: white;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .navbar .nav-links {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar .nav-links a {
-        margin: 10px 0;
-    }
-
-    .container {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .main-content {
-        padding: 20px 10px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-    }
-
-    .footer-section {
-        padding: 10px;
-    }
-}
