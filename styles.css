@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(209, 248, 244);
+  }
+  
+  header {
+    background-image: url('https://www.jobsoid.com/wp-content/uploads/2020/01/Employer-Branding.svg'); /* Replace with your desired background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(4, 23, 58);
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for depth */
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  section {
+    background-color:rgb(243, 235, 145);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+
+  
+  h2 {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .image-section {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: black;
+}
+
+section {
+    flex: 0 0 18%; /* Set each section to be 50% width */
+    margin-bottom:10px;
+}
