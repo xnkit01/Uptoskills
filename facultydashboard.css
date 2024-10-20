@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+  
+    background-color:white;
+    text-align: center;
+    width:95vw;
+    margin: auto;
+}
+.i1{
+    font-size: 16px;
+   color: #ff6D34;
+   margin: 10px 0px;
+}
+.head{
+    color:black;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.head1{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #5f5f5f;
+    line-height: 25px;
+
+    
+}
+.volunteer{
+    margin-top:10px;
+    color:#2c2c2c;
+    
+    font-size: 48px;
+    font-weight:900;
+    margin-bottom: 20px;
+}
+.prop{
+    font-size: 50px;
+}
+
+.register-button {
+    background-color: #ff6f31;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+#second-head {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.linespace{
+    line-height: 30px;
+    margin: 15px 0px;
+}
+
+
+.reasons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.reason {
+    width: 18%;
+    padding: 30px;
+    background-color: white;
+    height: 45vh;
+    border-radius: 8px;
+    text-align: center;
+}
+.reason:hover{
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.08);
+ }
+
+.reason img {
+  margin: 0 0 5px;
+    
+}
+
+.reason h4 {
+    margin-top:8px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:#2c2c2c;
+}
+
+.reason p {
+    font-size: 16px;
+    color:#5f5f5f;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-section {
+    flex: 40%;
+    background-color: white;
+    margin-right:20px;
+
+}
+.left-section h2{
+    color:#2c2c2c;
+    font-size:29px;
+    text-align: left;
+    
+}
+.left-section p{
+    color:#5f5f5f;
+    font-size:16px ;
+    text-align: left;
+    
+}
+.left-section ul{
+    color:#5f5f5f;
+    font-size:16px ;
+    text-align: left;
+    line-height: 30px;
+    list-style-position: inside;
+    
+    
+}
+#fruit li::marker{
+    content:"✔";
+    color:green;
+    font-size: 1.2em;
+    letter-spacing: 7px;
+    
+}
+
+.right-section {
+    flex: 80%;
+    background-color: white;
+   padding-left: 4px;
+   
+   
+}
+.right-section p{
+    margin-bottom: 16px;
+}
+
+h2 {
+    color: #ff5a22;
+    font-size: 35px;
+}
+
+p, ul, li {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.input{
+    text-align: left;
+}
+
+input, textarea {
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+    height: 55%;
+    box-sizing: border-box;
+    background-color: #f3f3f3;;
+}
+.session1{
+    padding: 17px;
+    width:calc(98% - 4px);
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #ff6d34;;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff7833;
+}
+#grid{
+display: grid;
+grid-template-areas: "input1 input2"
+                    "input3 input4"
+                    "input5 input6";
+}
+.i2{
+    margin-top: 40px;
+}
