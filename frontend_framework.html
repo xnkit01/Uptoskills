@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider with Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slide {
+      min-width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+  <div class="relative w-[350px] h-[600px] overflow-hidden rounded-lg shadow-lg bg-white">
+    <div class="absolute top-0 left-0 right-0 flex justify-between items-center px-4 py-2 bg-black bg-opacity-70 text-white">
+      <div id="indicators" class="flex space-x-1">
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+        <span class="indicator w-2 h-2 bg-white rounded-full opacity-50"></span>
+      </div>
+      <button 
+        id="play" 
+        class="text-xl border border-white bg-transparent text-white px-4 py-1 rounded-full focus:outline-none hover:bg-white hover:text-black transition">
+        ▶️
+      </button>
+    </div>
+    <div id="slides" class="slides-container">
+      <div class="slide flex items-center justify-center h-full bg-blue-500 text-white">Slide 1</div>
+      <div class="slide flex items-center justify-center h-full bg-green-500 text-white">Slide 2</div>
+      <div class="slide flex items-center justify-center h-full bg-red-500 text-white">Slide 3</div>
+      <div class="slide flex items-center justify-center h-full bg-yellow-500 text-black">Slide 4</div>
+      <div class="slide flex items-center justify-center h-full bg-purple-500 text-white">Slide 5</div>
+      <div class="slide flex items-center justify-center h-full bg-pink-500 text-white">Slide 6</div>
+      <div class="slide flex items-center justify-center h-full bg-gray-500 text-white">Slide 7</div>
+      <div class="slide flex items-center justify-center h-full bg-indigo-500 text-white">Slide 8</div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-between px-4">
+      <button
+        id="prev"
+        class="bg-white bg-opacity-80 hover:bg-opacity-100 p-2 rounded-full shadow-lg text-gray-700 focus:outline-none"
+      >
+        &#8592;
+      </button>
+      <button
+        id="next"
+        class="bg-white bg-opacity-80 hover:bg-opacity-100 p-2 rounded-full shadow-lg text-gray-700 focus:outline-none"
+      >
+        &#8594;
+      </button>
+    </div>
+  </div>
+  <script>
+    const slides = document.getElementById("slides");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+    const playButton = document.getElementById("play");
+    const indicators = document.querySelectorAll(".indicator");
+
+    const totalSlides = 8; 
+    let currentIndex = 0;
+    let isPlaying = false;
+    let playInterval;
+    const goToSlide = (index) => {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      currentIndex = index;
+      updateIndicators();
+    };
+    const updateIndicators = () => {
+      indicators.forEach((indicator, i) => {
+        indicator.style.opacity = i === currentIndex ? "1" : "0.5";
+      });
+    };
+    const nextSlide = () => {
+      goToSlide((currentIndex + 1) % totalSlides);
+    };
+    const prevSlide = () => {
+      goToSlide((currentIndex - 1 + totalSlides) % totalSlides);
+    };
+    const togglePlay = () => {
+      if (isPlaying) {
+        clearInterval(playInterval);
+        playButton.textContent = "▶️"; 
+      } else {
+        playInterval = setInterval(nextSlide, 2000);
+        playButton.textContent = "⏸️"; 
+      }
+      isPlaying = !isPlaying;
+    };
+    nextButton.addEventListener("click", nextSlide);
+    prevButton.addEventListener("click", prevSlide);
+    playButton.addEventListener("click", togglePlay);
+    updateIndicators();
+  </script>
+</body>
+</html>
